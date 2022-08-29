@@ -14,11 +14,11 @@
     <form class="form-login" action="#" method="post">
         <div class="login-card card">
             <div class="card-header">
-                <i class="icofont-travelling"></i>
-                <span class="font-weight-light">In </span>
-                <span class="font-weight-bold">N' </span>
+                <i class="icofont-travelling mr-2"></i>
+                <span class="font-weight-light">In</span>
+                <span class="font-weight-bold mx-2">N'</span>
                 <span class="font-weight-light">Out</span>
-                <i class="icofont-runner-alt-1"></i>
+                <i class="icofont-runner-alt-1 ml-2"></i>
             </div>
             <div class="card-body">
                 <div class="form-group">
