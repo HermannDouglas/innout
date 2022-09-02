@@ -8,7 +8,7 @@ class Login extends Model {
                 return $user;
             }
         }
-        throw new Exception();
+        throw new AppException();
     }    
 }
 ?>
