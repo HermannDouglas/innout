@@ -1,2 +1,2 @@
 # innout
-Proeto Innout do curso de PHP.
+Projeto Innout do curso de PHP.
