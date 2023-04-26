@@ -1,7 +1,7 @@
 body {
   display: grid;
   grid-template-columns: 250px 1fr;
-  grid-template-rows: 64px 1fr 64px;
+  grid-template-rows: 164px 1fr 64px;
   grid-template-areas:
     "header header"
     "sidebar content"
@@ -36,12 +36,30 @@ header.header .logo {
   color: white;
   font-size: 2rem;
   flex-basis: 250px;
+  height: 100%;
 }
 
 header.header .menu-toggle {
-   color: white;
-   cursor: 
-   ;
+  color: white;
+  cursor: pointer;
+}
+
+header.header .spacer {
+  flex: 1;
+}
+
+header.header .dropdown-button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  height: 100%;
+  font-size: 1.1rem;
+  color: white;
+  cursor: pointer;
+}
+
+header.header .dropdown-content {
+   background-color: #191919;
 }
 
 aside.sidebar {
