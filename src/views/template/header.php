@@ -22,7 +22,7 @@
          <i class="icofont-runner-alt-1 ml-2"></i>
       </div>
       <div class="menu-toggle mx-3">
-         <i class="iconfont-navigation-menu"></i>
+         <i class="icofont-navigation-menu"></i>
       </div>
       <div class="spacer"></div>
       <div class="dropdown">
