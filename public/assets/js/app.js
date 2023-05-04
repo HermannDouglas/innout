@@ -5,3 +5,4 @@
     body.classList.toggle("hide-sidebar");
   };
 })();
+
