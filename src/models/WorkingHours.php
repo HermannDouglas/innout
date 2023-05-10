@@ -3,7 +3,7 @@
 class WorkingHours extends Model
 {
    protected static $tableName = 'working_hours';
-   protected static $colunms = [
+   protected static $columns = [
       'id',
       'user_id',
       'work_date',
