@@ -7,6 +7,15 @@
    );
    ?>
    <div>
+      <form class="mb-4" action="#" method="post">
+         <select name="period" class="form-control" placeholder="Selecione o período...">
+            <?php
+            foreach ($periods as $key => $month) {
+               echo "<option value='{$key}'>{$month}</option>";
+            }
+            ?>
+         </select>
+      </form>
       <table class="table table-bordered table-striped">
          <thead>
             <th>Dia</th>
@@ -17,7 +26,7 @@
             <th>Saldo</th>
          </thead>
          <tbody>
-            <?php foreach($report as $registry): ?>
+            <?php foreach ($report as $registry) : ?>
                <tr>
                   <td><?= formatDateWithLocale($registry->work_date, '%A, %d de %B de %Y')  ?></td>
                   <td><?= $registry->time1 ?></td>
