@@ -29,7 +29,7 @@ $sumOfWorkedTime = 0;
 $lastDay = getLastDayOfMonth($selectedPeriod)->format('d');
 
 for ($day = 1; $day <= $lastDay; $day++) {
-   $date = $selectedPeriod->format('Y-m') . '-' . sprintf('%02d', $day);
+   $date = $selectedPeriod . '-' . sprintf('%02d', $day);
    $registry = $registries[$date];
 
    if (isPastWorkDay($date)) $workDay++;
