@@ -8,6 +8,13 @@
    ?>
    <div>
       <form class="mb-4" action="#" method="post">
+         <select name="user" class="form-control" placeholder="Selecione o usuário...">
+            <?php
+            foreach ($users as $user) {
+               echo "<option value='{$user->id}'>{$user->name}</option>";
+            }
+            ?>
+         </select>
          <select name="period" class="form-control" placeholder="Selecione o período...">
             <?php
             foreach ($periods as $key => $month) {
