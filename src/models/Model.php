@@ -18,7 +18,7 @@ class Model
             foreach ($arr as $key => $value) {
                 $cleanValue = $value;
                 if ($sanitize && isset($cleanValue)) {
-                    $cleanValue = strip_tags(trim($cleanValue));;
+                    $cleanValue = strip_tags(trim($cleanValue));
                     $cleanValue = htmlentities($cleanValue, ENT_NOQUOTES);
                     // $cleanValue = mysqli_real_escape_string($conn, $cleanValue);
                 }
@@ -36,6 +36,10 @@ class Model
     public function __set($key, $value)
     {
         $this->values[$key] = $value;
+    }
+
+    public function getValues() {
+        return $this->values;
     }
 
     public static function getOne($filters = [], $columns = '*')
